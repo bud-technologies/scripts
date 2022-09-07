@@ -16,8 +16,8 @@ for namespace in bud-base-server bud-handlemq-server;do
         nextMinor=`expr $minor + 1`
         #nextMinor= ((minor++))
         nextVersion="$major.$nextMinor.${patch}_1"
-        #echo $image '->' $nextVersion
-        echo $image
+        echo $image '->' $nextVersion
+        #echo $image
     done
 
 done
