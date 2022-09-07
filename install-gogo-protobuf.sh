@@ -28,10 +28,5 @@ done
 
 $get github.com/gogo/protobuf/jsonpb
 
-# 使用方式
 # 这里有个需要注意的点：如果开启了GO111MODULE则指定的src/xxx/protobuf找不到，因为我们在go get时放在了pkg下面且有版本管理
 # 目前官方暂未解决，所以这里在安装时设置GO111MODULE来兼容
-#protoc -I=. -I=$GOPATH/src -I=$GOPATH/src/github.com/gogo/protobuf/protobuf --{binary}_out=. myproto.proto
-
-# 支持grpc
-#protoc --gofast_out=plugins=grpc:. my.proto
