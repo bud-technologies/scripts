@@ -1,8 +1,10 @@
 #!/bin/bash
 
+echo "如果提示需要在module下运行，切换到含有go.mod的目录下即可"
+
 read -p 'is your go version > 1.16? (y/n,default n)' flag
 get='go get'
-[[ "$flag" == 'y' ]] && get="$get -d"
+[[ "$flag" == 'y' ]] && get="go get -d"
 
 echo $flag,$get
 
